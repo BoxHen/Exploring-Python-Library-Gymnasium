@@ -7,7 +7,7 @@ print("================================================")
 print("  Gymnasium Q-Learning Lab: FrozenLake-v1")
 print("================================================\n")
 
-# PHASE 1: FAST TRAINING (With Epsilon Decay Fix)
+# Fast training with epsilon decay fix
 # Use render_mode=None to train at maximum CPU speed without UI lag
 env = gym.make("FrozenLake-v1", map_name="4x4", is_slippery=False, render_mode=None)
 
@@ -50,7 +50,7 @@ for episode in range(total_episodes):
 env.close()
 print("Training complete. The Q Table has been mapped.")
 
-# PHASE 2: VISUAL DEMONSTRATION
+# Run visuals
 print("\nPhase 2: Opening PyGame window to observe the trained agent...")
 print("The agent will now use 100% exploitation (epsilon=0) to show its perfect path.")
 
